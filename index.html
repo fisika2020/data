@@ -1,0 +1,1139 @@
+<html>
+<head>
+    <title>DATA FISIKA ITS 2020</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+</head>
+
+<body class="single is-preload">
+        <div class="post">
+            <h2>
+                <span>DATA FISIKA ITS 2020</span>
+                <input type="search" placeholder="Cari..."
+                class="form-control search-input" data-table="table"/>
+            </h2>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 20%" />
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>NRP</th>
+<th>Nama</th>
+<th>P/L</th>
+<th>Daerah</th>
+<th>Tempat, Tanggal Lahir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>001</td>
+<td>YOGA MASDYA</td>
+<td>L</td>
+<td>JEMBER</td>
+<td>JEMBER, 29 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>002</td>
+<td>MOH. NOUVALDY</td>
+<td>L</td>
+<td>PAMEKASAN</td>
+<td>SAMPANG, 13 JULI 2001</td>
+</tr>
+<tr class="odd">
+<td>003</td>
+<td>AHMAD RAFLI HARI PUTRA</td>
+<td>L</td>
+<td>BALIKPAPAN</td>
+<td>SURABAYA, 29 APRIL 2002</td>
+</tr>
+<tr class="even">
+<td>004</td>
+<td>ARUM SETYOWATI</td>
+<td>P</td>
+<td>NGANJUK</td>
+<td>NGANJUK, 23 OKTOBER 2002</td>
+</tr>
+<tr class="odd">
+<td>005</td>
+<td>WIWIN SUHERTI</td>
+<td>P</td>
+<td>PANDEGLANG</td>
+<td>PANDEGLANG, 25 OKTOBER 2002</td>
+</tr>
+<tr class="even">
+<td>006</td>
+<td>MEILYSA KURNIA SARI</td>
+<td>P</td>
+<td>PAMEKASAN</td>
+<td>PAMEKASAN, 5 MEI 2002</td>
+</tr>
+<tr class="odd">
+<td>007</td>
+<td>FATHAN MUYASSAR SANTANA</td>
+<td>L</td>
+<td>LOMBOK TIMUR</td>
+<td>MATARAM, 6 AGUSTUS 2001</td>
+</tr>
+<tr class="even">
+<td>008</td>
+<td>OKTAVIA NUR HALISA</td>
+<td>P</td>
+<td>BANGKALAN</td>
+<td>BANGKALAN, 18 OKTOBER 2001</td>
+</tr>
+<tr class="odd">
+<td>009</td>
+<td>MIFTACHUL LUTFIAH</td>
+<td>P</td>
+<td>GRESIK</td>
+<td>GRESIK, 23 MARET 2002</td>
+</tr>
+<tr class="even">
+<td>010</td>
+<td>ANDI FIRMANSYAH</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>GRESIK, 28 AGUSTUS 2002</td>
+</tr>
+<tr class="odd">
+<td>011</td>
+<td>FERNANDO DWI YULIANTONO</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>MAGETAN, 21 APRIL 2001</td>
+</tr>
+<tr class="even">
+<td>012</td>
+<td>MOHAMMAD FARID SUBAGIO</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 6 SEPTEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>013</td>
+<td>SOLIHIN</td>
+<td>L</td>
+<td>POLEWALI MANDAR</td>
+<td>JOGJA LAMA, 10 JANUARI 2003</td>
+</tr>
+<tr class="even">
+<td>014</td>
+<td>ELISA FEBIOLITA</td>
+<td>P</td>
+<td>PROBOLINGGO</td>
+<td>PROBOLINGGO, 28 FEBRUARI 2001</td>
+</tr>
+<tr class="odd">
+<td>016</td>
+<td>FIRLY MAGHFIROH</td>
+<td>P</td>
+<td>GRESIK</td>
+<td>GRESIK, 28 OKTOBER 2001</td>
+</tr>
+<tr class="even">
+<td>017</td>
+<td>JHAGAS HANA WINAYA</td>
+<td>L</td>
+<td>BOJONEGORO</td>
+<td>BOJONEGORO, 14 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>018</td>
+<td>ILMA RAFI MUFLIHATU YUMNA</td>
+<td>P</td>
+<td>TRENGGALEK</td>
+<td>TRENGGALEK, 17 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>019</td>
+<td>BILQIA MAFAZ</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 4 MARET 2002</td>
+</tr>
+<tr class="odd">
+<td>020</td>
+<td>ARFIELDA PUTRI HERDIANSYAH</td>
+<td>P</td>
+<td>SIDOARJO</td>
+<td>LAMONGAN, 18 APRIL 2003</td>
+</tr>
+<tr class="even">
+<td>021</td>
+<td>NABILAH PUTRI PUSPITASARI</td>
+<td>P</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 23 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>022</td>
+<td>ALIEFIA SESANTI ANJARWANI</td>
+<td>P</td>
+<td>PACITAN</td>
+<td>SURAKARTA, 16 FEBRUARI 2002</td>
+</tr>
+<tr class="even">
+<td>023</td>
+<td>ALFATH SETYOAJI</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 30 OKTOBER 2001</td>
+</tr>
+<tr class="odd">
+<td>024</td>
+<td>DIYANA NASIHATIN NADIYAH</td>
+<td>P</td>
+<td>PAMEKASAN</td>
+<td>PAMEKASAN, 21 OKTOBER 2001</td>
+</tr>
+<tr class="even">
+<td>025</td>
+<td>NAUFAL DHYAUDIN HIBATULAH</td>
+<td>L</td>
+<td>MADIUN</td>
+<td>KAB. MADIUN, 19 SEPTEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>026</td>
+<td>YUSRIL MAULANA</td>
+<td>L</td>
+<td>PONTIANAK</td>
+<td>PONTIANAK, 22 MEI 2002</td>
+</tr>
+<tr class="even">
+<td>028</td>
+<td>DEA MONICA</td>
+<td>P</td>
+<td>BANDAR LAMPUNG</td>
+<td>JAKARTA, 12 SEPTEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>029</td>
+<td>SOVIE DWI APRILIA</td>
+<td>P</td>
+<td>KOTA MOJOKERTO</td>
+<td>MOJOKERTO, 9 APRIL 2002</td>
+</tr>
+<tr class="even">
+<td>030</td>
+<td>MUHAMMAD FARHAN AMMARULLAH</td>
+<td>L</td>
+<td>KAB BANGKALAN</td>
+<td>SURABAYA, 20 FEBRUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>031</td>
+<td>NIKEN RIZKA PANGASTUTI</td>
+<td>P</td>
+<td>TULUNGAGUNG</td>
+<td>TULUNGAGUNG, 23 OKTOBER 2002</td>
+</tr>
+<tr class="even">
+<td>032</td>
+<td>MUHAMMAD RIZAL FAHMI</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 1 JULI 2003</td>
+</tr>
+<tr class="odd">
+<td>033</td>
+<td>NABIHA RASSYA ISLAMI SATRIO PUTRI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 15 MARET 2002</td>
+</tr>
+<tr class="even">
+<td>034</td>
+<td>FADELHI AGI PRADANA</td>
+<td>L</td>
+<td>LAMPUNG TENGAH</td>
+<td>LAMPUNG TENGAH, 11 JULI 2002</td>
+</tr>
+<tr class="odd">
+<td>035</td>
+<td>ALIYAH JIHAN FADHILAH</td>
+<td>P</td>
+<td>NGANJUK</td>
+<td>SURABAYA, 13 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>036</td>
+<td>ANDRY PRASETYO</td>
+<td>L</td>
+<td>KAB LAMONGAN</td>
+<td>LAMONGAN, 3 MEI 2002</td>
+</tr>
+<tr class="odd">
+<td>037</td>
+<td>ANISA YEKTI INDAH PALUPI</td>
+<td>P</td>
+<td>TULUNGAGUNG</td>
+<td>TULUNGAGUNG, 17 MEI 2001</td>
+</tr>
+<tr class="even">
+<td>038</td>
+<td>HARUN AL HAKIM</td>
+<td>L</td>
+<td>BUKITTINGGI</td>
+<td>BUKITTINGGI, 8 APRIL 2002</td>
+</tr>
+<tr class="odd">
+<td>039</td>
+<td>RAFI’ ANMARA HABIBIE TANJUNG</td>
+<td>L</td>
+<td>TANGERANG</td>
+<td>JAKARTA, 22 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>040</td>
+<td>DANIEL TOBY SAHALA</td>
+<td>L</td>
+<td>TANGERANG SELATAN</td>
+<td>JAKARTA, 24 AGUSTUS 2002</td>
+</tr>
+<tr class="odd">
+<td>041</td>
+<td>AULIA FAZA DARMAWAN</td>
+<td>L</td>
+<td>JAKARTA SELATAN</td>
+<td>JAKARTA, 20 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>042</td>
+<td>ADI FAUZAN GIMNASTIAR</td>
+<td>L</td>
+<td>BEKASI</td>
+<td>BEKASI, 24 OKTOBER 2002</td>
+</tr>
+<tr class="odd">
+<td>043</td>
+<td>GALIH RAFI SALAUDDIN</td>
+<td>L</td>
+<td>TANGERANG SELATAN</td>
+<td>CILACAP, 8 OKTOBER 2001</td>
+</tr>
+<tr class="even">
+<td>044</td>
+<td>FAUZAN FAKHRIZAL AZMI</td>
+<td>L</td>
+<td>JAKARTA BARAT</td>
+<td>JAKARTA, 23 MARET 2002</td>
+</tr>
+<tr class="odd">
+<td>045</td>
+<td>ZUFAR AMAANATURRAAFI</td>
+<td>L</td>
+<td>SEMARANG</td>
+<td>SEMARANG, 22 MARET 2002</td>
+</tr>
+<tr class="even">
+<td>046</td>
+<td>MUHAMMAD SULTHAN ZACKY RAIHAN PUTERA HASAN</td>
+<td>L</td>
+<td>BEKASI</td>
+<td>BEKASI, 28 FEBRUARI 2003</td>
+</tr>
+<tr class="odd">
+<td>047</td>
+<td>DIANA NUR AVIAN</td>
+<td>P</td>
+<td>KARANGANYAR</td>
+<td>KARANGANYAR, 27 JULI 2001</td>
+</tr>
+<tr class="even">
+<td>049</td>
+<td>RAYHAN FIRDAUS</td>
+<td>L</td>
+<td>JEMBER</td>
+<td>MEDAN, 31 MEI 2002</td>
+</tr>
+<tr class="odd">
+<td>050</td>
+<td>ALFIN RACHMAD CAHYADI</td>
+<td>L</td>
+<td>BATU</td>
+<td>MALANG, 3 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>051</td>
+<td>ARFINA DITANINGRUM</td>
+<td>P</td>
+<td>NGANJUK</td>
+<td>NGANJUK, 12 DESEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>052</td>
+<td>ADINDA PRAMESTI PUTRI</td>
+<td>P</td>
+<td>TRENGGALEK</td>
+<td>TRENGGALEK, 12 SEPTEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>053</td>
+<td>MAULIDA FAIQOTUR RIF’AH</td>
+<td>P</td>
+<td>KOTA BLITAR</td>
+<td>BLITAR, 25 MEI 2002</td>
+</tr>
+<tr class="odd">
+<td>054</td>
+<td>MUHAMMAD FADLI ROHMAN RIZALDI</td>
+<td>L</td>
+<td>PASURUAN</td>
+<td>PASURUAN, 10 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>055</td>
+<td>MUHAMMAD PAKSI SATRIO BAYU DHIYAUL HAQ</td>
+<td>L</td>
+<td>MALANG</td>
+<td>MAKASSAR, 21 JANUARI 2003</td>
+</tr>
+<tr class="odd">
+<td>056</td>
+<td>VIRA OKARINA</td>
+<td>P</td>
+<td>KEDIRI</td>
+<td>KEDIRI, 22 OKTOBER 2001</td>
+</tr>
+<tr class="even">
+<td>057</td>
+<td>NURUL ROFIDHATUL ILMI</td>
+<td>P</td>
+<td>MOJOKERTO</td>
+<td>MOJOKERTO, 10 JANUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>058</td>
+<td>GENNY STYLLITA YUDARSONO</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>BLORA, 28 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>059</td>
+<td>ROIHANA AMINI</td>
+<td>P</td>
+<td>SUMENEP</td>
+<td>SUMENEP, 22 APRIL 2002</td>
+</tr>
+<tr class="odd">
+<td>060</td>
+<td>MUHAMMAD ELMI NASRUL AULIYA</td>
+<td>L</td>
+<td>PASURUAN</td>
+<td>SIDOARJO, 12 DESEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>061</td>
+<td>PRAMADITYA ARDIAN SAPUTRA</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 25 MEI 2001</td>
+</tr>
+<tr class="odd">
+<td>062</td>
+<td>RADITYA CAKRA YUDHA</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 30 JUNI 2001</td>
+</tr>
+<tr class="even">
+<td>063</td>
+<td>ELOK RAHMAWATI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>MOJOKERTO, 14 JANUARI 2003</td>
+</tr>
+<tr class="odd">
+<td>064</td>
+<td>HAIKAL KHUBBI SAPUTRA</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SIDOARJO, 9 NOVEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>065</td>
+<td>MOCH. ALIF MAHESA HILMI</td>
+<td>L</td>
+<td>PASURUAN</td>
+<td>PASURUAN, 26 FEBRUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>066</td>
+<td>ANDYRA MANIKAM INTAN PINTALOKA</td>
+<td>P</td>
+<td>TULUNGAGUNG</td>
+<td>TULUNGAGUNG, 26 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>067</td>
+<td>ACHMAD RIZAL PALEVI PRIAMBODO</td>
+<td>L</td>
+<td>KEDIRI</td>
+<td>SURABAYA, 10 OKTOBER 2001</td>
+</tr>
+<tr class="odd">
+<td>068</td>
+<td>CHOIRUN NISA</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 17 JANUARI 2002</td>
+</tr>
+<tr class="even">
+<td>069</td>
+<td>AHMAD RIZAL MAULANA</td>
+<td>L</td>
+<td>BOJONEGORO</td>
+<td>BOJONEGORO, 29 JUNI 2001</td>
+</tr>
+<tr class="odd">
+<td>070</td>
+<td>MOCH. FAUZAN SURYA EARLYANSYAH</td>
+<td>L</td>
+<td>FAK FAK</td>
+<td>SIDOARJO, 18 JANUARI 2003</td>
+</tr>
+<tr class="even">
+<td>071</td>
+<td>RIZKY RAMADHANI ARDANINGGAR</td>
+<td>P</td>
+<td>BLORA</td>
+<td>BLORA, 11 NOVEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>072</td>
+<td>MOCHAMMAD ADITYA RACHMANDA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 25 APRIL 2002</td>
+</tr>
+<tr class="even">
+<td>074</td>
+<td>MUHAMMAD DHANY WAHYUDI SAPUTRA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 24 JULI 2002</td>
+</tr>
+<tr class="odd">
+<td>075</td>
+<td>MUHAMMAD RAHMAN ZUBAIDIY</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>GRESIK, 10 DESEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>076</td>
+<td>MUHAMMAD ZAINUDDIN ZIDAN</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SIDOARJO, 1 JANUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>077</td>
+<td>MUHAMMAD ALFREDA YOGA NUGRAHA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 31 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>078</td>
+<td>ISMAWATI PUTRI</td>
+<td>P</td>
+<td>JOMBANG</td>
+<td>JOMBANG, 2 SEPTEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>079</td>
+<td>YUSRON MUCHAJJALIIN</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 12 APRIL 2001</td>
+</tr>
+<tr class="even">
+<td>080</td>
+<td>DANIEL ANUGRAH KHARISMAWAN</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>MAGELANG, 8 AGUSTUS 2001</td>
+</tr>
+<tr class="odd">
+<td>081</td>
+<td>M. MAKINUN AMIN</td>
+<td>L</td>
+<td>BOJONEGORO</td>
+<td>BOJONEGORO, 5 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>082</td>
+<td>SANNY SALSABILLAH SAPUTRI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 9 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>083</td>
+<td>MOCHAMMAD SYAUQI IRAWAN SUHARDARMA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 27 NOVEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>084</td>
+<td>PUTRI APRILLIA LESTARI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>PONOROGO, 22 APRIL 2002</td>
+</tr>
+<tr class="odd">
+<td>085</td>
+<td>WILLIAM WAHYU WIRATAMA</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 2 DESEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>086</td>
+<td>ZAMRORI SUDI MAULANA</td>
+<td>L</td>
+<td>KOTA BARU</td>
+<td>KAB. KOTABARU, 1 APRIL 2002</td>
+</tr>
+<tr class="odd">
+<td>087</td>
+<td>ELA ELVIANI</td>
+<td>P</td>
+<td>KARANGASEM</td>
+<td>KARANGASEM, 29 OKTOBER 2001</td>
+</tr>
+<tr class="even">
+<td>088</td>
+<td>PRAYOGA FAJAR SIDIQ</td>
+<td>L</td>
+<td>KEDIRI</td>
+<td>KEDIRI, 16 JULI 2001</td>
+</tr>
+<tr class="odd">
+<td>089</td>
+<td>FARHAN ALY HASBI</td>
+<td>L</td>
+<td>TULUNGAGUNG</td>
+<td>TULUNGAGUNG, 10 MEI 2002</td>
+</tr>
+<tr class="even">
+<td>090</td>
+<td>CINDY CLAUDIA KARIM</td>
+<td>P</td>
+<td>JOMBANG</td>
+<td>JOMBANG, 24 JUNI 2001</td>
+</tr>
+<tr class="odd">
+<td>091</td>
+<td>RAHMAWATI TYASTUTI</td>
+<td>P</td>
+<td>BLORA</td>
+<td>TANGERANG, 13 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>092</td>
+<td>YURINA WIDYASTUTI</td>
+<td>P</td>
+<td>BLITAR</td>
+<td>BLITAR, 26 JANUARI 2003</td>
+</tr>
+<tr class="odd">
+<td>093</td>
+<td>OSAMA VEGA NANDA</td>
+<td>L</td>
+<td>LAMONGAN</td>
+<td>LAMONGAN, 31 MARET 2002</td>
+</tr>
+<tr class="even">
+<td>094</td>
+<td>FERRY ATH THAARIQ MUDHOFIR</td>
+<td>L</td>
+<td>BEKASI</td>
+<td>JAKARTA, 23 JULI 2001</td>
+</tr>
+<tr class="odd">
+<td>095</td>
+<td>RAIHAN ARIFAINI ANGGARAKSA</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SIDOARJO, 16 NOVEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>096</td>
+<td>MUHAMMAD ALVAN HIDAYATULLOH</td>
+<td>L</td>
+<td>JOMBANG</td>
+<td>JOMBANG, 9 NOVEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>098</td>
+<td>RINA EKA INDRIATI</td>
+<td>P</td>
+<td>GRESIK</td>
+<td>NGANJUK, 29 JUNI 2002</td>
+</tr>
+<tr class="even">
+<td>099</td>
+<td>ALDO DIMASMULYA MUHAMMAD</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 26 APRIL 2002</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>ZHAFIRA RAKHMA HANIFAH</td>
+<td>P</td>
+<td>JAKARTA TIMUR</td>
+<td>JAKARTA, 22 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>101</td>
+<td>ANINDYA AYU LARASSATY</td>
+<td>P</td>
+<td>PALEMBANG</td>
+<td>PALEMBANG, 5 JULI 2002</td>
+</tr>
+<tr class="odd">
+<td>102</td>
+<td>STEFHANY ADHI WIDJAYA</td>
+<td>P</td>
+<td>MOJOKERTO</td>
+<td>CIREBON, 18 SEPTEMBER 2003</td>
+</tr>
+<tr class="even">
+<td>103</td>
+<td>AMIRA KHAIRUNISA PONDRY</td>
+<td>P</td>
+<td>TANGERANG SELATAN</td>
+<td>JAKARTA, 10 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>104</td>
+<td>HARDA AMANDA PRADINI</td>
+<td>P</td>
+<td>GRESIK</td>
+<td>JOMBANG, 21 JANUARI 2002</td>
+</tr>
+<tr class="even">
+<td>105</td>
+<td>FARIZAL RAHMADANA PUTRA</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 10 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>106</td>
+<td>ENGGAR KENYA CANDRA WINTANG</td>
+<td>P</td>
+<td>BOJONEGORO</td>
+<td>BOJONEGORO, 31 DESEMBER 2001</td>
+</tr>
+<tr class="even">
+<td>108</td>
+<td>HAFNA WAHYU ARDINI</td>
+<td>P</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 8 MARET 2003</td>
+</tr>
+<tr class="odd">
+<td>109</td>
+<td>HALIMATUS SYAIDAH</td>
+<td>P</td>
+<td>MALANG</td>
+<td>MALANG, 20 APRIL 2002</td>
+</tr>
+<tr class="even">
+<td>110</td>
+<td>MUHAMAD WILDAN SYAUQIE</td>
+<td>L</td>
+<td>SIDOARJO</td>
+<td>SIDOARJO, 6 JULI 2001</td>
+</tr>
+<tr class="odd">
+<td>111</td>
+<td>STEPHANIE LISA ARYANI</td>
+<td>P</td>
+<td>BANDUNG</td>
+<td>BANDUNG, 29 AGUSTUS 2001</td>
+</tr>
+<tr class="even">
+<td>112</td>
+<td>MAHENDRA HARDIKA PUTRA</td>
+<td>L</td>
+<td>PROBOLINGGO</td>
+<td>PROBOLINGGO, 2 SEPTEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>113</td>
+<td>MUHAMMAD SABDA FIRLI SAID</td>
+<td>L</td>
+<td>BEKASI</td>
+<td>BEKASI, 11 FEBRUARI 2002</td>
+</tr>
+<tr class="even">
+<td>114</td>
+<td>MAGHFIRA LUNA TASHANTY</td>
+<td>P</td>
+<td>KARANGANYAR</td>
+<td>KARANGANYAR, 30 JUNI 2001</td>
+</tr>
+<tr class="odd">
+<td>115</td>
+<td>RIZKY AGUNG SAMUDERA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 27 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>116</td>
+<td>DEWANTI NUR ROMADONA</td>
+<td>P</td>
+<td>GRESIK</td>
+<td>KEDIRI, 15 DESEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>117</td>
+<td>NADJA HALIZA ARAFANI</td>
+<td>P</td>
+<td>BEKASI</td>
+<td>JAKARTA, 12 MARET 2002</td>
+</tr>
+<tr class="even">
+<td>118</td>
+<td>FIQIH ADHIMUL KHOIR</td>
+<td>L</td>
+<td>LAMONGAN</td>
+<td>LAMONGAN, 9 JULI 2002</td>
+</tr>
+<tr class="odd">
+<td>119</td>
+<td>DISKA MAHARANI KUSTANTO</td>
+<td>P</td>
+<td>BOGOR</td>
+<td>BOGOR, 21 APRIL 2002</td>
+</tr>
+<tr class="even">
+<td>120</td>
+<td>FELDA GARDIANA NASOKA</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 26 JUNI 2002</td>
+</tr>
+<tr class="odd">
+<td>121</td>
+<td>SILVIA PUTRI RAHMAWATI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 15 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>122</td>
+<td>AMRETA PERMATA KUSUMA</td>
+<td>P</td>
+<td>PROBOLINGGO</td>
+<td>GRESIK, 22 MARET 2002</td>
+</tr>
+<tr class="odd">
+<td>123</td>
+<td>MU’AMMAR BARRAQ ALGHOZI</td>
+<td>L</td>
+<td>KERINCI</td>
+<td>SUNGAI PENUH, 29 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>124</td>
+<td>RAJA MUDA PURBA</td>
+<td>L</td>
+<td>BATAM</td>
+<td>SURABAYA, 12 AGUSTUS 2002</td>
+</tr>
+<tr class="odd">
+<td>125</td>
+<td>IDA AMIROTUN NISAK</td>
+<td>P</td>
+<td>KEDIRI</td>
+<td>KEDIRI, 30 APRIL 2001</td>
+</tr>
+<tr class="even">
+<td>126</td>
+<td>FARRAS ATHALA FAUZAN</td>
+<td>L</td>
+<td>PURWAKARTA</td>
+<td>JAKARTA, 6 AGUSTUS 2000</td>
+</tr>
+<tr class="odd">
+<td>127</td>
+<td>MUHAMMAD RAMADHAN SAHITYA</td>
+<td>L</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 22 NOVEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>128</td>
+<td>NAUFAL ALIF NURIL AMANY</td>
+<td>L</td>
+<td>BOGOR</td>
+<td>BANDUNG, 28 FEBRUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>129</td>
+<td>STEFANI ARIYANTI</td>
+<td>P</td>
+<td>JAKARTA SELATAN</td>
+<td>JAKARTA, 7 SEPTEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>130</td>
+<td>ANANDA RISMILDA ROHMAWATI</td>
+<td>P</td>
+<td>TULUNGAGUNG</td>
+<td>GRESIK, 6 MARET 2001</td>
+</tr>
+<tr class="odd">
+<td>131</td>
+<td>KUNTHI NUR RAKHMAWATI</td>
+<td>P</td>
+<td>KOTA MAGELANG</td>
+<td>DENPASAR, 19 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>132</td>
+<td>AHMAD SIROJ AT TAMAMI</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 4 OKTOBER 2002</td>
+</tr>
+<tr class="odd">
+<td>133</td>
+<td>MUHAMMAD SIROJ AT TAMIMI</td>
+<td>L</td>
+<td>GRESIK</td>
+<td>GRESIK, 4 OKTOBER 2002</td>
+</tr>
+<tr class="even">
+<td>134</td>
+<td>MUHAMMAD FAWWAZ RAYENDRA CAHYANDITO</td>
+<td>L</td>
+<td>KOTA BEKASI</td>
+<td>BEKASI, 22 AGUSTUS 2002</td>
+</tr>
+<tr class="odd">
+<td>135</td>
+<td>ANNISA SYAHRA</td>
+<td>P</td>
+<td>KOTA BOGOR</td>
+<td>BOGOR, 15 JUNI 2001</td>
+</tr>
+<tr class="even">
+<td>136</td>
+<td>AULIA NUR HAFIZD</td>
+<td>L</td>
+<td>PENAJAM PASER UTARA</td>
+<td>PENAJAM, 30 MEI 2001</td>
+</tr>
+<tr class="odd">
+<td>137</td>
+<td>DANDI TAUFIQ NOERHIDAYAT</td>
+<td>L</td>
+<td>BEKASI</td>
+<td>JAKARTA, 4 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>138</td>
+<td>SALSABILA RAHMAH</td>
+<td>P</td>
+<td>JAKARTA SELATAN</td>
+<td>SIDOARJO, 14 APRIL 2001</td>
+</tr>
+<tr class="odd">
+<td>139</td>
+<td>MUHAMMAD MASRIZKAR</td>
+<td>L</td>
+<td>JAKARTA SELATAN</td>
+<td>JAKARTA, 16 AGUSTUS 2002</td>
+</tr>
+<tr class="even">
+<td>140</td>
+<td>IVANA DZAKIYYAH RAMADHANI</td>
+<td>P</td>
+<td>SIDOARJO</td>
+<td>SURABAYA, 25 NOVEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>141</td>
+<td>NADYA PUTRI ARISNI</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 14 FEBRUARI 2002</td>
+</tr>
+<tr class="even">
+<td>142</td>
+<td>LUTHFIA HUMAIRO</td>
+<td>P</td>
+<td>BANYUWANGI</td>
+<td>BANYUWANGI, 1 NOVEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>143</td>
+<td>HAYFA ANNISA</td>
+<td>P</td>
+<td>DEPOK</td>
+<td>DEPOK, 6 MEI 2002</td>
+</tr>
+<tr class="even">
+<td>144</td>
+<td>CAHAYA LINTANG RAHMADHANI</td>
+<td>P</td>
+<td>NGAWI</td>
+<td>NGAWI, 28 NOVEMBER 2002</td>
+</tr>
+<tr class="odd">
+<td>145</td>
+<td>NASYWA ZAHIRA</td>
+<td>P</td>
+<td>BANDA ACEH</td>
+<td>BANDA ACEH, 28 DESEMBER 2002</td>
+</tr>
+<tr class="even">
+<td>146</td>
+<td>KRYSTALLYN GRACELLA ANGELINE</td>
+<td>P</td>
+<td>BINTARO</td>
+<td>JAKARTA, 4 DESEMBER 2001</td>
+</tr>
+<tr class="odd">
+<td>147</td>
+<td>JASINDA WIJDANNYSA</td>
+<td>P</td>
+<td>MAGETAN</td>
+<td>MAGETAN, 25 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>148</td>
+<td>AMANDA MAULIDA ULIFAH</td>
+<td>P</td>
+<td>NGANJUK</td>
+<td>NGANJUK, 26 MEI 2002</td>
+</tr>
+<tr class="odd">
+<td>149</td>
+<td>TUHFATUL ULYA</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 11 NOVEMBER 2000</td>
+</tr>
+<tr class="even">
+<td>150</td>
+<td>BOBY SETIAWAN</td>
+<td>L</td>
+<td>JAKARTA TIMUR</td>
+<td>KEDIRI, 23 JULI 2002</td>
+</tr>
+<tr class="odd">
+<td>151</td>
+<td>YOHANA RENNY ANGGRAENI</td>
+<td>P</td>
+<td>SEMARANG</td>
+<td>SEMARANG, 4 JUNI 2002</td>
+</tr>
+<tr class="even">
+<td>152</td>
+<td>FARRAS RAYHAN</td>
+<td>L</td>
+<td>JAKARTA TIMUR</td>
+<td>JAKARTA, 4 AGUSTUS 2002</td>
+</tr>
+<tr class="odd">
+<td>153</td>
+<td>MUHAMMAD ABEL MAULUDY</td>
+<td>L</td>
+<td>JAKARTA TIMUR</td>
+<td>JAKARTA, 11 MEI 2002</td>
+</tr>
+<tr class="even">
+<td>154</td>
+<td>MUTIARA RIFA INSYIRAH</td>
+<td>P</td>
+<td>SIDOARJO</td>
+<td>BONDOWOSO, 7 FEBRUARI 2002</td>
+</tr>
+<tr class="odd">
+<td>155</td>
+<td>TSAMARAH INSYIRAH</td>
+<td>P</td>
+<td>KOTA DEPOK</td>
+<td>SURABAYA, 13 JULI 2002</td>
+</tr>
+<tr class="even">
+<td>156</td>
+<td>SARTIKA OKTA WIYONA</td>
+<td>P</td>
+<td>SURABAYA</td>
+<td>SURABAYA, 15 OKTOBER 2002</td>
+</tr>
+<tr class="odd">
+<td>158</td>
+<td>MUHAMMAD IKHSAN AL GHIFFARI</td>
+<td>L</td>
+<td>CIAMIS</td>
+<td>CIAMIS, 6 JULI 2002</td>
+</tr>
+</tbody>
+</table>
+        </div>
+            <section id="footer">
+                <p class="social">Give me a Lovely Hug - <a href="https://github.com/jhagas/">GitHub</a> - 
+                <a href="https://qoto.org/@jhagas">Mastodon</a></p>
+            </section>
+    </div>
+</body>
+</html>
