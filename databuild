@@ -68,8 +68,7 @@ cat << EOF > index.html
 $table
         </div>
             <section id="footer">
-                <p class="social">Give me a Lovely Hug - <a href="https://github.com/jhagas/">GitHub</a> - 
-                <a href="https://qoto.org/@jhagas">Mastodon</a></p>
+                <p class="social">Give us a Lovely Hug - <a href="https://github.com/fisika2020/">GitHub</a></p>
             </section>
     </div>
 </body>
