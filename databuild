@@ -55,9 +55,9 @@ cat << EOF > index.html
             <h2>
                 <span>DATA FISIKA ITS 2020</span>
                 <input type="search" placeholder="Cari..."
-                class="form-control search-input" data-table="table"/>
+                class="form-control search-input" data-table="data-table"/>
             </h2>
-<table>
+<table class="data-table">
 <colgroup>
 <col style="width: 5%" />
 <col style="width: 20%" />
