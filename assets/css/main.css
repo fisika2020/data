@@ -63,7 +63,6 @@ input.search-input {
 
 		#header h1 {
 			height: inherit;
-            font-size: 1.3em;
 			line-height: inherit;
 			padding: 0 0 0 1.5em;
 			white-space: nowrap;
@@ -222,6 +221,24 @@ table {
         }
     }
 		
+	@media screen and (max-width: 350px) {
+
+   		table td {
+   			padding: 0.45em;
+   		}
+
+		table tbody tr {
+            font-size: 0.6em;
+		}
+
+		table th {
+			font-size: 0.6em;
+		}
+
+        h1 {
+            font-size: 14pt;
+        }
+    }
 #footer .social {
 	color: #4C566A;
 	font-size: 0.9em;
