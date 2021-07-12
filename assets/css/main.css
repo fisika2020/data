@@ -65,6 +65,24 @@ h1 {
 		}
 
 
+.material {
+    color: #d3dee9;
+    background-color: #5E81AC;
+    position: fixed;
+    padding: 1em;
+    bottom: 30px;
+    right: 20px;
+    z-index: 50px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button {
+    display: block;
+}
+
+
 body, input, select, textarea {
 	color: #4C566A;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -317,12 +335,7 @@ body.single #footer {
 			height: inherit;
 			line-height: inherit;
 			padding: 0 0 0 1.5em;
-			white-space: nowrap;
 		}
-
-			#header h1 a {
-				font-size: 0.7em;
-			}
 
 		#header .links {
 			flex: 1;
@@ -484,10 +497,6 @@ body.single #footer {
 
 				#header h1 {
 					padding: 0 0 0 1em;
-				}
-
-				#header .main .search {
-					display: none;
 				}
 
 		}
