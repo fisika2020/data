@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script>
+        function mobile(action) {
+            if(action == 'hilang') {
+                document.getElementById('judul').style.display = "none";
+            }
+        }
         (function(document) {
             'use strict';
 
@@ -47,7 +52,7 @@
 
 <body class="single is-preload">
     <header id="header">
-    <h1>FISIKA 2020</h1>
+    <h1 id="judul">FISIKA 2020</h1>
     <nav class="main">
 							<ul>
 								<li>
@@ -1149,7 +1154,7 @@
               </p>
             </section>
     </div>
-			    <a class="material" href="#search" >
+			    <a class="material" href="#search" onclick="mobile('hilang')">
                     <div class="fa fa-search button"></div>
                 </a>
 </body>
